@@ -1,0 +1,45 @@
+String->Number
+
+Number.parseInt(n)
+Number.parseFloat(n)
+Number(n)
+__________________________________
+
+Number->String
+
+String(n)
+n.toString()
+__________________________________
+
+s.length ---- quantos caracteres tem na String
+s.toUpperCase() ---- tudo para maiusculas
+s.toLowerCase() ---- tudo para minusculas
+n.toFixed(x) ---- define o numero de casas de um numero
+n.toLocaleString(`pt-BR`,(style: `currency`, currency:`BRL`)) ----
+---- formata para uma moeda a sua escolha
+___________________________________
+
+Operadores aritméticos
+mais +
+menos -
+vezes * 
+divisão / 
+divisão inteiro %
+potência **
+
+Operadores Relacionais
+maior >
+menor <
+maior ou igual >=
+menor ou igual <=
+igual ==
+diferente !=
+igualdade restrita ===
+ 
+Operadores Lógicos
+Negação !
+Conjunção &&
+Disjunção || 
+
+Operadores Tenários
+"teste" ? "true" : "false"
