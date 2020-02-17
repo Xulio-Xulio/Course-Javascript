@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: cornsilk;
+            font: normal 20pt arial;
+        }
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adding Values</h1>
+    <input type="number" name="numbe1" id="numbe1"> +
+    <input type="number" name="numbe2" id="numbe2">
+    <input type="button" value="add" onclick="add()">
+    <div id="res"> Result</div>
+    <script>
+        function add(){
+            var nu1 = document.querySelector(`input#numbe1`)
+            var nu2 = document.querySelector(`input#numbe2`)
+            var res = document.querySelector(`div#res`)
+            var n1 = Number(nu1.value)
+            var n2 = Number(nu2.value)
+            var sum = n1 + n2
+            res.innerHTML = `the sum of ${n1} and ${n2} is <strong>${sum}</strong>`
+        }
+    </script>
+</body>
+</html>
