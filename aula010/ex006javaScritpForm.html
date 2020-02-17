@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM events</title>
+<style>
+    body {
+        background: black;
+    }
+
+    div#area {
+        background: green;
+        color: white;
+        font: normal 25pt arial ;
+        width: 200px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+</style>
+</head>
+<body>
+    <!--JavaScript Form-->
+    <div id = "area">
+        Interact
+    </div>
+  
+    <script>
+        addEventListener(`click` , clickk)
+        addEventListener(`mouseenter` , enterr)
+        addEventListener(`mouseout` , outt)
+        
+        function clickk() {
+            var area = document.querySelector(`div#area`)
+            area.innerText = `OUCH!`
+            area.style.background =  `red`
+        }
+        function enterr() {
+            var area = document.querySelector(`div#area`)
+            area.innerText = `came in`
+        }
+        function outt() {
+            var area = document.querySelector(`div#area`)
+            area.innerText = `exited`
+            area.style.background = `green`
+        }
+
+    </script>
+    
+</body>
+</html>

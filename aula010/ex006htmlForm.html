@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM events</title>
+<style>
+    body {
+        background: black;
+    }
+
+    div#area {
+        background: green;
+        color: white;
+        font: normal 25pt arial ;
+        width: 200px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+</style>
+</head>
+<body>
+    <!--Html Form-->
+    <div id = "area" onclick="clic()" onmouseenter="enter()" onmouseout="outy()">
+        Interact
+    </div>
+  
+    <script>
+        function clic() {
+            var area = document.querySelector(`div#area`)
+            area.innerText = `OUCH!`
+            area.style.background =  `red`
+        }
+        function enter() {
+            var area1 = document.querySelector(`div#area`)
+            area1.innerText = `came in`
+        }
+        function outy() {
+            var area2 = document.querySelector(`div#area`)
+            area2.innerText = `exited`
+            area2.style.background = `green`
+        }
+
+    </script>
+    
+</body>
+</html>
