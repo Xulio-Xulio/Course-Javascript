@@ -43,3 +43,12 @@ Disjunção ||
 
 Operadores Tenários
 "teste" ? "true" : "false"
+__________________________________
+
+DOM
+Selecionando:
+por marca = getElementsByTagName()
+por ID = getElementById()
+por nome = getElementsByName()
+por classe = getElementsByClassName()
+por seletor = getElementsBy

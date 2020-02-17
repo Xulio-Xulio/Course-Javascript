@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Come on</title>
-</head>
+    <title>DOM</title>
 <style>
-    div{margin-bottom: -5px;}
     body {
-        background-color: cornflowerblue;
-
+        background-color: gray;
+        color: white;
+        font: italic 18pt;
+        
     }
-    h1 {
-        color: darkblue;
-        font-style: italic;
-    }
-    
+  
 </style>
+</head>
 <body>
-    <h1>Hello peoples</h1>
+
+    <H1>First steps with DOM</H1>
+    <p>here's the result</p>
+    <p>Learning to use <strong>DOM</strong> in javascript</p>
+    <div id="msg">Click me</div>
     <script>
-        window.alert("hello")
-        window.confirm("Let's go ?")
-    </script>    
+        /* DOM uses */
+        var body = window.document.body
+        var p1 = window.document.getElementsByTagName(`p`)[1]
+        window.document.write(`Look: ${p1.innerText}`)
+        body.style.background = `black`
+        p1.style.color = `yellow`
+        document.write(p1.innerHTML)
+        var msg = window.document.getElementById(`msg`)
+        msg.style.background = `green`
+
+    </script>
+    
 </body>
 </html>
