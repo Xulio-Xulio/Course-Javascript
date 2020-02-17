@@ -51,4 +51,6 @@ por marca = getElementsByTagName()
 por ID = getElementById()
 por nome = getElementsByName()
 por classe = getElementsByClassName()
-por seletor = getElementsBy
+por seletor = querySelector() ------- querySelectorAll()
+    id = #
+    class = .
