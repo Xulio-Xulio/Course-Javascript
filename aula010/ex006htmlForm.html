@@ -18,6 +18,11 @@
         line-height: 100px;
         text-align: center;
     }
+    h1 {
+        color: red;
+        font: italic 50pt;
+    }
+
 
 </style>
 </head>
@@ -26,12 +31,17 @@
     <div id = "area" onclick="clic()" onmouseenter="enter()" onmouseout="outy()">
         Interact
     </div>
+    <h1>STEP BACK </h1>
+    <p></p>
   
     <script>
         function clic() {
             var area = document.querySelector(`div#area`)
+            var total = document.querySelector
             area.innerText = `OUCH!`
             area.style.background =  `red`
+            total.innerText = 1+=1
+
         }
         function enter() {
             var area1 = document.querySelector(`div#area`)
