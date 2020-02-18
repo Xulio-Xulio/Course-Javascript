@@ -18,6 +18,9 @@
         line-height: 100px;
         text-align: center;
     }
+    p {
+        color: white;
+    }
 
 </style>
 </head>
@@ -25,12 +28,18 @@
     <!--JavaScript Form-->
     <div id = "area">
         Interact
+    
     </div>
+    <p></p>
   
     <script>
+        var maxValue = 10;
+        var Cont = 10;
         var area = document.querySelector(`div#area`)
         var area1 = document.querySelector(`div#area`)
         var area2 = document.querySelector(`div#area`)
+        var text = document.querySelector(`p`)
+        var ouch = documen.querySelector(`p`)
         area.addEventListener(`click` , clickk)
         area1.addEventListener(`mouseover` , enterr)
         area2.addEventListener(`mouseout` , outt)
@@ -38,7 +47,14 @@
         function clickk() {
             area.innerText = `OUCH!`
             area.style.background =  `red`
+            if (Cont >= 20) {
+            console.warn("Its useless, came to 20 !")
+            } else {
+                Cont++;
         }
+            text.innerText = `You clicked ${Cont} times`
+        }
+        
         function enterr() {
             area.innerText = `came in`
         }
@@ -47,7 +63,7 @@
             area.style.background = `green`
         }
         
-        
+
     </script>
     
 </body>

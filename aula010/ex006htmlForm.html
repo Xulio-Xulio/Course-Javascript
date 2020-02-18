@@ -22,9 +22,7 @@
         color: red;
         font: italic 50pt;
     }
-    p {
-        color: rgb(255, 255, 255);
-    }
+    
 
 
 </style>
@@ -35,15 +33,13 @@
         Interact
     </div>
     <h1>STEP BACK </h1>
-    <p></p>
+    
   
     <script>
         function clic() {
             var area = document.querySelector(`div#area`)
-            var total = document.getElementsByTagName(`p`)
             area.innerText = `OUCH!`
             area.style.background =  `red`
-            total.innerHtml = +=1
         }
         function enter() {
             var area1 = document.querySelector(`div#area`)
