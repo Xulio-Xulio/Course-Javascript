@@ -22,6 +22,9 @@
         color: red;
         font: italic 50pt;
     }
+    p {
+        color: rgb(255, 255, 255);
+    }
 
 
 </style>
@@ -37,11 +40,10 @@
     <script>
         function clic() {
             var area = document.querySelector(`div#area`)
-            var total = document.querySelector
+            var total = document.getElementsByTagName(`p`)
             area.innerText = `OUCH!`
             area.style.background =  `red`
-            total.innerText = 1+=1
-
+            total.innerHtml = +=1
         }
         function enter() {
             var area1 = document.querySelector(`div#area`)

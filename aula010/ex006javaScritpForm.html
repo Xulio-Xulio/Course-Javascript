@@ -28,25 +28,26 @@
     </div>
   
     <script>
-        addEventListener(`click` , clickk)
-        addEventListener(`mouseover` , enterr)
-        addEventListener(`mouseout` , outt)
+        var area = document.querySelector(`div#area`)
+        var area1 = document.querySelector(`div#area`)
+        var area2 = document.querySelector(`div#area`)
+        area.addEventListener(`click` , clickk)
+        area1.addEventListener(`mouseover` , enterr)
+        area2.addEventListener(`mouseout` , outt)
         
         function clickk() {
-            var area = document.querySelector(`div#area`)
             area.innerText = `OUCH!`
             area.style.background =  `red`
         }
         function enterr() {
-            var area = document.querySelector(`div#area`)
             area.innerText = `came in`
         }
-        function outt() {
-            var area = document.querySelector(`div#area`)
+        function outt() { 
             area.innerText = `exited`
             area.style.background = `green`
         }
-
+        
+        
     </script>
     
 </body>
