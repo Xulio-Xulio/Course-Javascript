@@ -32,14 +32,27 @@
     <div id = "area" onclick="clic()" onmouseenter="enter()" onmouseout="outy()">
         Interact
     </div>
-    <h1>STEP BACK </h1>
+    <h1>STEP BACK! </h1>
+    <p></p>
+    <h2></h2>
     
   
     <script>
+        var maxValue = 10;
+        var Cont = 0;
+        var text = document.querySelector(`p`)
+        var text1 = document.querySelector(`h2`)
+        var ouch = documen.querySelector(`p`)
         function clic() {
             var area = document.querySelector(`div#area`)
             area.innerText = `OUCH!`
             area.style.background =  `red`
+            if (Cont >= 20) {
+            text1.innerText = `Its useless, came to 20 !`
+            } else {
+                Cont++;
+        }
+            text.innerText = `You clicked ${Cont} times`
         }
         function enter() {
             var area1 = document.querySelector(`div#area`)
