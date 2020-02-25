@@ -54,3 +54,17 @@ por classe = getElementsByClassName()
 por seletor = querySelector() ------- querySelectorAll()
     id = #
     class = .
+__________________________________
+
+Condição Múltipla
+switch (expressão) {
+    case valor1:
+        "            "
+        break
+    case valor1:
+        "            "
+        break
+    default:
+        "            "
+        break
+}

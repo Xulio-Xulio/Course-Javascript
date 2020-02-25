@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fines system</h1>
+    <div>
+        <h2>What is your speed ?</h2>
+        <input type="number" name="txtfast" id="txtfast">
+        <input type="button" value="check" onclick="calculate()">
+        <p></p>
+    </div>
+</body>
+<script>
+    
+function calculate() {
+    var txtf = document.querySelector(`input#txtfast`)
+    var answer = document.querySelector(`p`)
+    var vel = Number(txtf.value)
+    answer.innerHTML = `Your speed is ${vel}mph</p>`
+    if (vel > 70) {
+        answer.innerHTML += `You are fast. You will be fined</p>`
+    } else {
+        if (25 <= vel && vel <=70 ) {
+        answer.innerHTML += `You are at the speed limits</p>`   
+            } else {
+                answer.innerHTML += `You are very slow</p>`
+            }
+    }
+    answer.innerHTML += `Drive carefully</p>`
+}
+</script>
+</html>
