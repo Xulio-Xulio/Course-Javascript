@@ -38,8 +38,8 @@ igualdade restrita ===
  
 Operadores Lógicos
 Negação !
-Conjunção &&
-Disjunção || 
+Conjunção(todos verdadeiros) &&
+Disjunção(pelo menos um verdadeiro) || 
 
 Operadores Tenários
 "teste" ? "true" : "false"
