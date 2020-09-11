@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
     <h1>Nota</h1>
     <h1>Calculo da Media</h1>
     <div>
         <h2>Qual a nota de suas provas</h2>
-        <p>Prova 1: <input type="number" name="p1" id="p1"></p>
-        <p>Prova 2: <input type="number" name="p2" id="p2"></p>
-        <p>Prova 3: <input type="number" name="p3" id="p3"></p>
+        <p>Prova 1:</p> <input type="number" name="prova1" id="prova1">
+        <p>Prova 2:</p> <input type="number" name="prova2" id="prova2">
+        <p>Prova 3:</p> <input type="number" name="prova3" id="prova3">
+        <br/>
+        <br/>
         <input type="button" value="check" onclick="calculate()">
         <hr>
         <p id="answer"></p>
