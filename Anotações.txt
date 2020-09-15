@@ -68,3 +68,9 @@ switch (expressão) {
         "            "
         break
 }
+__________________________________
+
+Escopos
+
+Escopo de função e bloco visualizão variaveis do escopo global,
+mas variveis no escopo de bloco e função não são visualizados pelo escopo global.
