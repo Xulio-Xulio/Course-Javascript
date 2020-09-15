@@ -4,6 +4,7 @@ function calculate() {
     var prova3 = document.querySelector('input#prova3')
     var answer = document.querySelector('p#answer')
     var answer1 = document.querySelector('p#answer1')
+    var answer2 = document.querySelector('p#answer2')
 
     var p1 = Number(prova1.value)
     var p2 = Number(prova2.value)
@@ -18,9 +19,9 @@ function calculate() {
     answer.innerHTML = `A sua media é ${media.toFixed(2)}`
 
     if( media >= 7) {
-        answer1.innerHTML += `Parabens voce passou. Boas ferias!!!<p/>`
+        answer1.innerHTML = `Parabens voce passou. Boas ferias!!!`
     } 
     else {
-        answer2.innerHTML += `Infelizmente voce repetiu. Por favor entrar em contato com o colegio.<p/>`
+        answer2.innerHTML = `Infelizmente voce repetiu. Por favor entrar em contato com o colegio.`
     }
 }
