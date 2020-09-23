@@ -40,8 +40,8 @@ function addItem() {
 }
 
 function orderList() {
- var new_list = document.querySelector(`p#list_view`)
-            new_list.innerText = everything_list 
+    var new_list = document.querySelector(`p#list_view`)
+    new_list.innerText = everything_list 
 
     console.log(everything_list.sort())
 
